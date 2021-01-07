@@ -1,15 +1,23 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-Some information about you!
+I started on C, Rails, and Java, to a full serverless stack using python and nodeJS Lambdas, S3, DynamoDB, ReactJS and Angular2+ based frameworks. I have also done extensive custom plugin development for Wordpress customers. I am accustomed to wearing many hats, and can balance tasks effectively. I am quick to learn on the fly and willing and able to exceed expectations.
 
+My current expertise is based in ReactJS / React Native, and Cloud platform integrations. I am open to team feedback and my goal is continued growth.
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I like to work on indie games in my spare computer time. I'm also a big movie fan and when the weather is just right, I love camping and backpacking. Currently residing in Gulf Breeze Florida.
 
-### Contact me
+### Available for Work!
+- React
+-- React Native
+- Node
+- Express
+- C#
+- ASP.NET
+- Electron
 
-[email@domain.com](mailto:email@domain.com)
+[jcm.codes@gmail.com](mailto:jcm.codes@gmail.com)
