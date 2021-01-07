@@ -5,13 +5,13 @@ published: false
 
 React Native has gotten famous among engineers in current occasions. The vast majority of the tech monsters and huge organizations are adjusting this innovation and building up their applications on perhaps the most moving platforms. React Native system is essentially used to create cross-platform portable applications. Going to the fundamental inquiry, for what reason would it be a good idea for you to utilize this platform? The basic answer is that engineers need to make one single code that works for all platforms: Android and iOS. 
 
-What is a cross-platform application? 
+### What is a cross-platform application? 
 
 These are fundamentally applications that can chip away at different platforms. It is an open-source platform created by one of the tech goliaths Facebook. This platform functions admirably in lessening the troublesome improvement measure. React Native application improvement utilizes JavaScript as the center programming language. This makes React Native an incredibly simple language for the JS designers to learn and create applications with. This platform likewise cut out the impediments native applications have. There are a few advantages of utilizing this platform. 
 
 In the event that you are thinking about building up an application with this platform, you should have a deep understanding of it. It's smarter to settle on an educated choice. We should investigate the advantages of utilizing this platform for portable application improvement. 
 
-Advantages of utilizing react native platform 
+### Advantages of utilizing react native platform 
 
 More extensive crowd base: When you build up a cross-platform application, you have the chance of contacting a more extensive arrangement of crowd. At the point when you focus on a more extensive crowd, there is a higher chance of your being a triumph. Conveying the application in the open market will likewise be simpler. 
 
