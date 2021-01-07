@@ -4,10 +4,10 @@ date: "2020-12-30T22:12:05.284Z"
 description: "Keep your computer from logging out or sleeping without installing anything!"
 ---
 
-## Wiggle Mouse: Built in java for portability.
+Keep your computer from logging out or sleeping without installing anything! I found a need to keep the computer from going to sleep/lock and security permissions didn't allow any installations. This solved that problem.
 
 ### Why?
-Keep your computer from logging out or sleeping without installing anything! I found a need to keep the computer from going to sleep/lock and security permissions didn't allow any installations. This solved that problem.
+Because a good developer makes their life as easy as possible. :)
 
 You can get the `JAR` file or download and build from the source.
 
