@@ -1,8 +1,8 @@
 ---
 published: true
+title: Developing with React Native
+layout: post
 ---
-
-## React Native: All-in-One Solution?
 
 React Native has gotten famous among engineers in current occasions. The vast majority of the tech monsters and huge organizations are adjusting this innovation and building up their applications on perhaps the most moving platforms. React Native system is essentially used to create cross-platform portable applications. Going to the fundamental inquiry, for what reason would it be a good idea for you to utilize this platform? The basic answer is that engineers need to make one single code that works for all platforms: Android and iOS. 
 
