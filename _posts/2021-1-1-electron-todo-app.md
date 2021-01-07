@@ -1,8 +1,10 @@
 ---
 title: Electron & NeDB Todo App
-date: "2020-12-22T22:12:03.284Z"
-description: "I am experimenting with Electron.js and created a small todo app."
+published: true
+layout: post
 ---
+
+Build cross-platform desktop apps with JavaScript, HTML, and CSS. Electron with React enables you to have a consistent look and feel for your application across multiple platforms. It's also dead-simple to build executables and installers with [Squirrel](https://github.com/Squirrel/).
 
 [Electron Todo App Repository](https://github.com/alpinstang/electron-nedb-todo).
 
