@@ -1,7 +1,9 @@
-
+---
+layout: post
+title:Tic Tac Toe: Determining a Winner Programmatically
+---
 
 This tutorial shows my approach to tic tac toe, and the problem of determining who won. The project is written in React. In this instance I instantiated the project using the ever-useful `create-react-app`.
-
 For the purposes of this article I'll just point out the key parts of the app, but you can find the entire source code on [Github](https://github.com/alpinstang/tic-tac-react/).
 
 All of this code is in the Board.jsx file. I plan to break out components more when I refactor the tic-tac-toe board to use `div`'s instead of `table` elements.
