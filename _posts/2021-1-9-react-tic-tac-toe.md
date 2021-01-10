@@ -53,7 +53,7 @@ checkForWinner = (arr, currentPlayer) => {
 
 This is the workhorse of the component. It iterates over the array elements and checks if any three values add to 15. Why 15? Well this is using what is called a [magic square](http)
 approach. You can learn more about the theory with the link, but the gist of it is any row, column, or diagonal of 3 (in our case) adds up to 15.
-<div stlye="background-color">
+<div stlye="background-color: white;">
 <img src="https://mathworld.wolfram.com/images/eps-gif/MagicSquare_800.gif" alt="wolfram alpha magic square image" />
 </div
 
