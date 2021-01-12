@@ -54,10 +54,12 @@ checkForWinner = (arr, currentPlayer) => {
 This is the workhorse of the component. It iterates over the array elements and checks if any three values add to 15. Why 15? Well this is using what is called a [magic square](http)
 approach. You can learn more about the theory with the link, but the gist of it is any row, column, or diagonal of 3 (in our case) adds up to 15.
 
-![magic square diagram](http://www.stmp.camden.sch.uk/wp-content/uploads/2017/05/magicsquare1.gif)
+![magic square diagram](https://i.ytimg.com/vi/QHTe2gwXPiY/maxresdefault.jpg "Magic Square")
 
 This eliminates the need for us to check specifically if three boxes have an 'X' or 'O' in them, as we just care about the unique number value of the box.
 There are other ways that are arguably more efficient but this is a simple solution that doesn't put too much strain on the browser since we have such small arrays to check.
+
+Here is the implemented page in React: [Tic Tac React Game](https://alpinstang.github.io/tic-tac-react/)
 
 i would love to see your solution to this problem. Leave a comment or drop a link to your solution!
 
