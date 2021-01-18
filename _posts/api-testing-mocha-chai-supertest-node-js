@@ -1,0 +1,47 @@
+---
+title: Pokedex API - Testing a Node Server with Mocha, Chai, and Supertest
+published: true
+layout: post
+---
+
+You might want to grab a frappuchino as well. 😅 This is a simple API  for Pokemon data and images of each monster. I set up travis to run my tests, which are written in Mocha, Chai, and Supertest. I really liked how easy it was to set up tests using this trio of tools.
+
+[Check it out on Repl.it](https://repl.it/@alpinstang/pokedex).
+
+One thing to note is that when I was writing my tests the server would not close after they completed. I tried other solutions but in the end this is the only one that worked.
+
+```js
+
+// Make sure we close the server.
+// This is called after all tests
+// regardless of passing or failing.
+after(function (done) {
+  app.close();
+  done();
+});
+
+describe("GET /", function () {
+  it("Health Check", (done) => {
+    request(app).get("/").expect(200).end(done);
+  });
+});
+
+describe("GET /api/v1/pokemon", function () {
+  it("API", (done) => {
+    request(app)
+      .get("/api/v1/pokemon")
+      .expect(200)
+      .expect("Content-Type", /json/)
+      .expect((res) => {
+        assert.equal(
+          res.body.status,
+          "success",
+          "Expected success in json response"
+        );
+      })
+      // Calling end makes sure that the test closes out, so after can be called.
+      .end(done);
+  });
+});
+
+```
