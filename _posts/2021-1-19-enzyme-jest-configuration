@@ -1,3 +1,8 @@
+---
+title: How to set up Jest and Enzyme in a React Redux App
+date: "2021-01-19T22:12:05.284Z"
+---
+
 I was having endless trouble with my test runner in my React app, and it was causing my build pipeline to fail as well. After a few hours of reading documents and cobbling answers from around the forums I found a solution. There are several places I needed to configure correctly. I'm listing them out below for anyone else that has this error and is not having any luck with other answers.
 
 Setup your package.json to include these dependencies, and jest configuration:
