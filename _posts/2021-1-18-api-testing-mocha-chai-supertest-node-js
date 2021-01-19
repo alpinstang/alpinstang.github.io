@@ -3,7 +3,7 @@ layout: post
 title: Pokedex API - Testing a Node Server with Mocha, Chai, and Supertest
 ---
 
-You might want to grab a frappuchino as well. 😅 This is a simple API  for Pokemon data and images of each monster. I set up travis to run my tests, which are written in Mocha, Chai, and Supertest. I really liked how easy it was to set up tests using this trio of tools.
+You might want to grab a frappuchino as well. This is a simple API  for Pokemon data and images of each monster. I set up travis to run my tests, which are written in Mocha, Chai, and Supertest. I really liked how easy it was to set up tests using this trio of tools.
 
 [Check it out on Repl.it](https://repl.it/@alpinstang/pokedex).
 
