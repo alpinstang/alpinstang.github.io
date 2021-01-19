@@ -1,0 +1,80 @@
+I was having endless trouble with my test runner in my React app, and it was causing my build pipeline to fail as well. After a few hours of reading documents and cobbling answers from around the forums I found a solution. There are several places I needed to configure correctly. I'm listing them out below for anyone else that has this error and is not having any luck with other answers.
+
+Setup your package.json to include these dependencies, and jest configuration:
+```json
+"devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "7.12.11",
+    "@babel/preset-react": "7.12.10",
+    "babel-jest": "26.6.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "chai": "^4.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-to-json": "^3.6.1",
+    "jest": "26.6.3",
+    "node-sass": "4.14.1",
+    "react-test-renderer": "17.0.1",
+    "redux-mock-store": "^1.5.4"
+  },
+
+...other stuff---
+
+"jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  }
+```
+
+Basic test:
+```js
+// <rootdir>/__tests__/app.test.js
+import React from "react";
+import { assert } from "chai";
+import { shallow, configure } from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
+import configureMockStore from "redux-mock-store";
+import { Provider } from "react-redux";
+
+import App from "../src/App"; // Component to Test
+
+configure({ adapter: new Adapter() });
+
+const mockStore = configureMockStore();
+const store = mockStore({});
+
+describe("Test Component", () => {
+  it("render correctly App component", () => {
+    const AppComponent = shallow(
+      <Provider store={store}>
+        <App />
+      </Provider>
+    ).exists();
+    assert(AppComponent === true);
+  });
+});
+```
+Add these styleMock and filemock modules to prevent errors on jsx components importing css/scss and/or files:
+```js
+// <rootdir>/__mocks__/styleMock.js
+module.exports = {};
+
+// <rootdir>/__mocks__/fileMock.js
+module.exports = "test-file-stub";
+```
+```js
+// <rootdir>/babel.config.js
+module.exports = {
+  presets: ["@babel/preset-env", "@babel/preset-react"],
+  plugins: [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-transform-runtime",
+  ],
+};
+
+```
+👩‍💻👨‍💻 ...and _now_ you should be able to run your tests with jest + enzyme, and in my case, chai. 
+
+
