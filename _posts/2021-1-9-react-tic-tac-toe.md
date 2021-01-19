@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Tic Tac Toe - Determining a Winner Programmatically
-published: true
 ---
 
 This tutorial shows my approach to tic tac toe, and the problem of determining who won. The project is written in React. In this instance I instantiated the project using the ever-useful `create-react-app`.
