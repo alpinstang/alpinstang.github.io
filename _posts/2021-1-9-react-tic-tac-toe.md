@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Tic Tac Toe: Determining a Winner Programmatically
+title: Tic Tac Toe - Determining a Winner Programmatically
 published: true
 ---
 
